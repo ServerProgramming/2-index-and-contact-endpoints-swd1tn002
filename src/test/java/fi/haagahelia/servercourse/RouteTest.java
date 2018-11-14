@@ -24,16 +24,12 @@ public class RouteTest {
 
     @Test
     public void getHello() throws Exception {
-        mvc.perform(MockMvcRequestBuilders.get("/index").accept(MediaType.TEXT_PLAIN))
-                .andExpect(status().isOk())
-                .andExpect(content().string(equalTo("This is the main page")));
-    }
 
+    }
 
     @Test
     public void getAbout() throws Exception {
-        mvc.perform(MockMvcRequestBuilders.get("/contact").accept(MediaType.TEXT_PLAIN))
-                .andExpect(status().isOk())
+        mvc.perform(MockMvcRequestBuilders.get("/contact").accept(MediaType.TEXT_PLAIN)).andExpect(status().isOk())
                 .andExpect(content().string(equalTo("This is the contact page")));
     }
 }
