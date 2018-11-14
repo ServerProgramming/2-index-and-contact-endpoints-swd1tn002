@@ -1,6 +1,7 @@
 package fi.haagahelia.servercourse;
 
 import static org.hamcrest.Matchers.equalTo;
+import static org.junit.Assert.fail;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -24,7 +25,7 @@ public class RouteTest {
 
     @Test
     public void getHello() throws Exception {
-
+        fail();
     }
 
     @Test
